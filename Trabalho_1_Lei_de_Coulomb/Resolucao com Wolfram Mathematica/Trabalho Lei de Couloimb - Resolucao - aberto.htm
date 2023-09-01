@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Trabalho Lei de Couloimb - Resolucao - aberto
+ </title>
+ <link href="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class='Title' style='text-align: center;'>
+ Trabalho em Grupo<br />Lei de Coulomb
+</p>
+
+
+
+<p class='Subtitle' style='text-align: center;'>
+ Fundamentos de F&iacute;sica 3 - 2023/2<br />UFES-Alegre
+</p>
+
+
+
+<p class='Subtitle' style='text-align: center;'>
+ Resolu&ccedil;&atilde;o do prof . Roberto Colistete Jr
+</p>
+
+
+
+<p class="Subsection">
+ Hist&oacute;rico
+</p>
+
+
+
+<p class="ItemNumbered">
+ 31/08/2023 : 1a quest&atilde;o completa (exceto diagramas vetoriais);
+</p>
+
+
+
+<p class="ItemNumbered">
+ 01/09/2023 : mais coment&aacute;rios na 1a quest&atilde;o, 2a quest&atilde;o completa (exceto diagramas vetoriais);
+</p>
+
+
+
+<p class="Subsection">
+ Objetivos de uso de Wolfram Mathematica nessa resolu&ccedil;&atilde;o dos problemas :
+</p>
+
+
+
+<p class="Item">
+ primeiro contato dos alunos com tal ambiente de computa&ccedil;&atilde;o num&eacute;rica, simb&oacute;lica e gr&aacute;fica;
+</p>
+
+
+
+<p class="Item">
+ pode ser usado como editor de textos e express&otilde;es matem&aacute;ticas;
+</p>
+
+
+
+<p class="Item">
+ pode ser usado para c&aacute;lculos diversos, num&eacute;ricos ou simb&oacute;licos/anal&iacute;ticos;
+</p>
+
+
+
+<p class="Item">
+ exemplos de programa&ccedil;&atilde;o com :
+</p>
+
+
+
+<p class="Subitem">
+ defini&ccedil;&atilde;o de vari&aacute;veis (via &ldquo;=&rdquo;);
+</p>
+
+
+
+<p class="Subitem">
+ solu&ccedil;&atilde;o de equa&ccedil;&atilde;o (via &ldquo;Solve&rdquo;);
+</p>
+
+
+
+<p class="Subitem">
+ extra&ccedil;&atilde;o de elementos de uma lista (via &ldquo;lista[[elemento]]&rdquo;);
+</p>
+
+
+
+<p class="Subitem">
+ aplica&ccedil;&atilde;o de uma regra de transforma&ccedil;&atilde;o em uma express&atilde;o (via &ldquo;expr /. x -&gt; v&rdquo;);
+</p>
+
+
+
+<p class="Subitem">
+ gr&aacute;fico de fun&ccedil;&atilde;o de uma vari&aacute;vel (via &ldquo;Plot&rdquo;);
+</p>
+
+
+
+<p class="Subitem">
+ derivada primeira (via &ldquo;D&rdquo;).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Section">
+ Quest&atilde;o 1&nbsp;&nbsp;- Decide-se dividir uma carga el&eacute;trica <span><em>Q</em></span> em duas partes, localizadas em part&#305;&#769;culas separadas por uma dist&acirc;ncia <span><em>d</em></span>, sendo que uma carga teria <span><em>q</em></span> e outra <span><span>(Q &minus; q)</span></span>. Para <span><em>q</em></span> arbitr&aacute;rio (por&eacute;m de mesmo sinal que <span><span><span>Q</span></span></span>), calcule a posi&ccedil;&atilde;o ao longo da linha que une as part&iacute;culas tal que a for&ccedil;a Coulombiana seja nula (nessa posi&ccedil;&atilde;o).<br />Qual &eacute; o valor de <span><em>q</em></span> tal que a for&ccedil;a de repuls&atilde;o Coulombiana entre as part&iacute;culas seja m&aacute;xima ? Com esse q, qual &eacute; a posi&ccedil;&atilde;o entre as part&iacute;culas tal que a for&ccedil;a Coulombiana seja nula (nessa posi&ccedil;&atilde;o) ?<br />N&atilde;o precisa usar nota&ccedil;&atilde;o vetorial.
+</p>
+
+
+
+<p class="Subsection">
+ Resolu&ccedil;&atilde;o :
+</p>
+
+
+
+<p class="Subsubsection">
+ 1a parte :
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_1.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_1.png" width="270" height="18" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_2.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_2.png" width="308" height="45" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_3.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_3.png" width="251" height="45" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Cancelando os termos comuns :
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_4.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_4.png" width="124" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Equa&ccedil;&atilde;o no <span style='font-style: italic;'>Mathematica</span> usa duplo igual, &ldquo;==&rdquo;. Enquanto que &ldquo;=&rdquo; &eacute; para atribuir valor a um objeto (vari&aacute;vel). Evite usar nomes de vari&aacute;veis com acentos, ent&atilde;o use letras, n&uacute;meros (n&atilde;o pode come&ccedil;ar com n&uacute;mero) e &ldquo;_&rdquo; :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_5.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_5.png" width="188" height="35" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_6.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_6.png" width="121" height="34" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Fun&ccedil;&atilde;o &ldquo;Solve[ ]&rdquo; resolve equa&ccedil;&otilde;es (uma ou um sistema), o segundo argumento &eacute; a vari&aacute;vel em rela&ccedil;&atilde;o a qual resolver a equa&ccedil;&atilde;o. Notar que fun&ccedil;&otilde;es pr&eacute;-existentes do <span style='font-style: italic;'>Wolfram Mathematica</span> sempre come&ccedil;am com letra mai&uacute;scula, t&ecirc;m argumentos entre colchetes, separados por v&iacute;rgula&nbsp;&nbsp;:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_7.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_7.png" width="207" height="19" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_8.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_8.png" width="388" height="44" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ A sa&iacute;da do &ldquo;Solve[ ]&rdquo; &eacute; na forma de uma lista (usando chaves), com cada solu&ccedil;&atilde;o na forma de uma regra de transforma&ccedil;&atilde;o do tipo &ldquo;{x -&gt; valor}&rdquo;.
+</p>
+
+
+
+<p class="Text">
+ Extraindo a <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_9.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_9.png" width="14" height="19" style="vertical-align:middle" /></span></span> solu&ccedil;&atilde;o, usamos duplos colchetes abrindo e fechando, e o n&uacute;mero (come&ccedil;ando de 1) para obter a 1a ou 2a solu&ccedil;&atilde;o, que &eacute; mostrada na forma de uma regra de transforma&ccedil;&atilde;o (com setinha) :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_10.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_10.png" width="84" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_11.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_11.png" width="180" height="44" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Aplicando a regra de transforma&ccedil;&atilde;o via &ldquo;/.&rdquo; (tipo &ldquo;tal que&rdquo;) :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_12.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_12.png" width="115" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_13.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_13.png" width="140" height="44" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Simplificando, considerando <span><em>d</em></span> positivo, atribuindo o resultado a uma vari&aacute;vel :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_14.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_14.png" width="292" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_15.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_15.png" width="131" height="48" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Extraindo a 2a solu&ccedil;&atilde;o, atribuindo o resultado a outra vari&aacute;vel :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_16.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_16.png" width="292" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_17.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_17.png" width="131" height="48" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Notar que as 2 solu&ccedil;&otilde;es n&atilde;o s&atilde;o v&aacute;lidas para <span><span>q=Q/2</span></span>, quando ocorre uma singularidade devido ao denominador nulo.
+</p>
+
+
+
+<p class="Subsubsection">
+ 2a parte :
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_18.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_18.png" width="196" height="45" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Para tal for&ccedil;a ser m&aacute;xima, veremos os extremos via m&eacute;todo da derivada primeira :
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_19.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_19.png" width="189" height="45" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_20.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_20.png" width="267" height="45" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_21.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_21.png" width="69" height="18" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_22.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_22.png" width="39" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Via computador se torna muito f&aacute;cil visualizar graficamente esse problema de m&aacute;ximo/m&iacute;nimo para a fun&ccedil;&atilde;o <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_23.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_23.png" width="18" height="19" style="vertical-align:middle" /></span></span> (removendo o denominador, que &eacute; mera constante em rela&ccedil;&atilde;o a <span><em>q</em></span>), por&eacute;m precisamos atribuir valor num&eacute;rico a <span><em>Q</em></span>, por exemplo, <span><span>Q=1C</span></span>. Vemos que o m&aacute;ximo ocorre em <span><span>q=Q/2=0,5C</span></span>. Para tanto usamos a fun&ccedil;&atilde;o &ldquo;Plot[]&rdquo; do <span style='font-style: italic;'>Wolfram Mathematica</span>, para fun&ccedil;&otilde;es matem&aacute;ticas de uma vari&aacute;vel, com <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_24.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_24.png" width="13" height="19" style="vertical-align:middle" /></span></span> argumento sendo a fun&ccedil;&atilde;o, <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_25.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_25.png" width="13" height="19" style="vertical-align:middle" /></span></span> argumento o dom&iacute;nio da vari&aacute;vel independente :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_26.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_26.png" width="391" height="19" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_27.gif" alt="Trabalho Lei de Couloimb - Resolucao - aberto_27.gif" width="360" height="224" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Onde a op&ccedil;&atilde;o &quot;AxesLabel&quot; significa r&oacute;tulos/nomes dos eixos, com <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_28.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_28.png" width="13" height="19" style="vertical-align:middle" /></span></span> sendo horizontal e <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_29.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_29.png" width="13" height="19" style="vertical-align:middle" /></span></span> sendo vertical.
+</p>
+
+
+
+<p class="Subsubsection">
+ 3a parte :
+</p>
+
+
+
+<p class="Text">
+ N&atilde;o &eacute; poss&iacute;vel substituir a solu&ccedil;&atilde;o acima para <span><em>q</em></span> nas 2 solu&ccedil;&otilde;es para <span><em>x</em></span> :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_30.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_30.png" width="105" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_31.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_31.png" width="263" height="31" style="vertical-align:middle;" usemap="#map_31" />
+<map name="map_31">
+<area shape="rect" coords="0,24,18,6" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_32.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_32.png" width="115" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Ent&atilde;o resolvemos novamente a equa&ccedil;&atilde;o inicial, usando <span><span>q=Q/2</span></span> :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_33.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_33.png" width="217" height="35" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_34.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_34.png" width="143" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_35.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_35.png" width="207" height="19" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_36.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_36.png" width="68" height="31" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Ou seja, com 2 cargas el&eacute;tricas iguais a <span><em>Q</em><em>/</em><em>2</em></span> separadas por dist&acirc;ncia <span><em>d</em></span>, ent&atilde;o o ponto m&eacute;dio entre elas, (<span><em>d</em><em>/</em><em>2</em></span>), tem for&ccedil;a Coulombiana nula.
+</p>
+
+
+
+<p class="Section">
+ Quest&atilde;o 2&nbsp;&nbsp;- Duas part&#305;&#769;culas, com cargas el&eacute;tricas <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_37.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_37.png" width="285" height="35" style="vertical-align:middle" /></span></span> est&atilde;o ao longo do eixo y, sendo <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_38.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_38.png" width="194" height="35" style="vertical-align:middle" /></span></span> e <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_39.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_39.png" width="216" height="35" style="vertical-align:middle" /></span></span>. Uma terceira part&#305;&#769;cula, com carga <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_40.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_40.png" width="240" height="35" style="vertical-align:middle" /></span></span>, est&aacute; situada ao longo do eixo <span><em>x</em></span>, com <span><em>x</em></span> podendo variar entre <span><span>0,0 m</span></span> e <span><span>d = +1,0 m</span></span>.<br />Para qual valor de <span><em>x</em></span> a soma das for&ccedil;as eletrost&aacute;ticas sobre <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_41.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_41.png" width="25" height="35" style="vertical-align:middle" /></span></span> &eacute; m&#305;&#769;nima em m&oacute;dulo ? E m&aacute;xima ?<br />Diagrame vetorialmente as duas for&ccedil;as e a for&ccedil;a resultante sobre <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_42.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_42.png" width="25" height="35" style="vertical-align:middle" /></span></span> para os dois valores de <span><em>x</em></span> encontrados.<br />Use nota&ccedil;&atilde;o vetorial em toda a resolu&ccedil;&atilde;o e fa&ccedil;a analiticamente, substituindo numericamente somente ao final.
+</p>
+
+
+
+<p class="Subsection">
+ Resolu&ccedil;&atilde;o :
+</p>
+
+
+
+<p class="Subsubsection">
+ 1a parte :
+</p>
+
+
+
+<p class="Text">
+ Dados :
+</p>
+
+
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_43.gif" alt="Trabalho Lei de Couloimb - Resolucao - aberto_43.gif" width="335" height="41" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Vetorialmente os vetores-posi&ccedil;&atilde;o s&atilde;o :
+</p>
+
+
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_44.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_44.png" width="201" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ For&ccedil;a Coulombiana sobre <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_45.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_45.png" width="14" height="19" style="vertical-align:middle" /></span></span> :
+</p>
+
+
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_46.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_46.png" width="270" height="45" style="vertical-align:middle" />
+</p>
+
+<p class="DisplayFormulaNumbered">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_47.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_47.png" width="49" height="18" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_48.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_48.png" width="442" height="47" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Ent&atilde;o :
+</p>
+
+
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_49.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_49.png" width="302" height="49" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_50.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_50.png" width="483" height="47" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_51.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_51.png" width="691" height="22" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Removendo as constantes, temos que obter os extremos da fun&ccedil;&atilde;o simplificada :
+</p>
+
+
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_52.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_52.png" width="85" height="45" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Via m&eacute;todo da derivada primeira em rela&ccedil;&atilde;o a <span><em>x</em></span>, onde no <span style='font-style: italic;'>Wolfram Mathematica</span> a derivada &eacute; via fun&ccedil;&atilde;o &ldquo;D[ ]&rdquo; :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_53.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_53.png" width="134" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_54.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_54.png" width="190" height="41" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_55.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_55.png" width="310" height="22" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_56.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_56.png" width="208" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_57.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_57.png" width="74" height="19" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_58.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_58.png" width="434" height="22" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_59.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_59.png" width="427" height="22" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_60.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_60.png" width="128" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_61.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_61.png" width="8" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_62.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_62.png" width="128" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_63.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_63.png" width="62" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ ent&atilde;o a fun&ccedil;&atilde;o simplificada &eacute; sempre positiva, come&ccedil;ando com valor nulo e crescendo no dom&iacute;nio, tal que o m&iacute;nimo ocorre em <span><em>x</em><em>=</em><em>0</em></span> m e o m&aacute;ximo em <span><em>x</em><em>=</em><em>d</em></span>.
+</p>
+
+
+
+<p class="Text">
+ Via computador a visualiza&ccedil;&atilde;o gr&aacute;fica confirma o m&iacute;nimo e m&aacute;ximo da fun&ccedil;&atilde;o simplificada nas bordas do dom&iacute;nio <span class="TextInline"><span><span>x&isin;[0,d]</span>.</span></span> Para tanto usamos a fun&ccedil;&atilde;o &ldquo;Plot[]&rdquo; do <span style='font-style: italic;'>Wolfram Mathematica</span> com <span><em>d</em><em>=</em><em>1</em></span> m :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_64.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_64.png" width="447" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_65.gif" alt="Trabalho Lei de Couloimb - Resolucao - aberto_65.gif" width="360" height="234" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ 2a parte :
+</p>
+
+
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_66.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_66.png" width="189" height="47" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Diagrama vetorial para <span><em>x</em><em>=</em><em>0</em></span> m &eacute; trivial, um vetor for&ccedil;a nulo sobre <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_67.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_67.png" width="14" height="19" style="vertical-align:middle" /></span></span> :
+</p>
+
+
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_68.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_68.png" width="119" height="21" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Diagrama vetorial para <span><span>x=d=1</span></span> m :
+</p>
+
+
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_69.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_69.png" width="442" height="47" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_70.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_70.png" width="441" height="49" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Usando o <span style='font-style: italic;'>Wolfram Mathematica</span> como calculadora :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_71.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_71.png" width="239" height="47" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_72.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_72.png" width="106" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_73.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_73.png" width="254" height="22" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Ou seja, a for&ccedil;a sobre <span><span><img src="HTMLFiles/Trabalho Lei de Couloimb - Resolucao - aberto_74.png" alt="Trabalho Lei de Couloimb - Resolucao - aberto_74.png" width="14" height="19" style="vertical-align:middle" /></span></span> na posi&ccedil;&atilde;o <span><em>x</em><em>=</em><em>d</em></span> &eacute; uma for&ccedil;a somente horizontal apontando para o sentido negativo do eixo <span><em>x</em></span>.
+</p>
+
+
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>
